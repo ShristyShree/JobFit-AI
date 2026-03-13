@@ -26,7 +26,7 @@ export default function App() {
 
   // Check API key is configured
   const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
-  const keyMissing = !apiKey || apiKey.includes('AIzaSyDK8UzCip1d8V8A2vmIsiPmwKkn7xm0bgs');
+  const keyMissing = !apiKey || apiKey.includes('GEMINI_API_KEY');
 
   const handleAnalyze = useCallback(async (resumeText, jobProfile, config) => {
     setView('loading');
